@@ -1,0 +1,227 @@
+.container {
+    margin-top: var(--base-size-8);
+    padding: 0px var(--base-size-16);
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8px;
+    grid-gap: 16px;
+}
+
+.layout-sidebar {
+    word-wrap: break-word;
+    max-width: 300px;
+}
+
+.user-avatar-card {
+    margin-top: 32px;
+}
+
+.user-avatar {
+    border-radius: 50%;
+}
+
+.username-card {
+    line-height: 1;
+    padding: 16px 0px;
+}
+
+.full-name {
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.additional-information-username {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--color-fg-muted);
+}
+
+.follow-sponsor-div {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 16px;
+}
+
+
+
+.user-profile-bio {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.followers-following {
+    margin-bottom: 16px;
+}
+
+
+
+.vcard-details {
+    >li {
+        padding-left: 24px;
+
+        >.octicon {
+            float: left;
+            width: 16px;
+            margin-top: 4px;
+            margin-left: -24px;
+            color: var(--color-fg-muted);
+            text-align: center;
+        }
+
+    }
+}
+
+.acheivements {
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: var(--borderWidth-thin, 1px) solid var(--borderColor-default, var(--color-border-default)) !important;
+}
+
+.layout-main-form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.main-actions {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: var(--borderWidth-thin, 1px) solid var(--borderColor-default, var(--color-border-default)) !important;
+}
+
+.options {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.search-repositories {
+     flex: 1 auto;
+}
+
+.form-control {
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--fgColor-default, var(--color-fg-default));
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid var(--control-borderColor-rest, var(--color-border-default));
+    border-radius: 6px;
+    width: 100%;
+}
+
+.single-repositories-listitem {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: var(--borderWidth-thin, 1px) solid var(--borderColor-default, var(--color-border-default)) !important;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.repo-details {
+    width: 80%;
+}
+
+.repo-description {
+    padding-right: 24px;
+    margin-bottom: 8px;
+    color: var(--fgColor-muted, var(--color-fg-muted)) !important;
+    width: 75%;
+
+}
+
+.label {
+    margin-left: 4px;
+    margin-bottom: 4px;
+    border-radius: 2em;
+    display: inline-block;
+    font-size: 0.75rem;
+    line-height: 18px;
+    padding: 0 7px;
+    color: var(--color-fg-muted);
+    font-weight: 500;
+    border: 1px solid var(--color-border-default)
+}
+
+.repo-language-color {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.octicon-star, .octicon-repo-forked, .octicon-package, .octicon-table, .octicon-repo, .octicon-book {
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
+.stars {
+    width: 20%;
+}
+
+.pagination-container{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .layout{
+         grid-template-columns: 1fr;
+         padding-left: 0px;
+         padding-right: 0px;
+    }
+
+    .layout-sidebar{
+        max-width: 100%;
+    }
+
+    .user-avatar-card{
+        display: flex;
+        margin-bottom: 24px;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .user-avatar{
+        height: 150px;
+        width: 150px;
+    }
+
+    .personal-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .follow-sponsor-div{
+        order: 2;
+    }
+    .followers-following{
+        order: 1;
+    }
+
+    .vcard-details{
+        margin-bottom: 16px;
+    }
+
+    .octicon-star, .octicon-repo-forked, .octicon-package, .octicon-table, .octicon-repo, .octicon-book {
+        display: contents;
+       
+    }
+ }
