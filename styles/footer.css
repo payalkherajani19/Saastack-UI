@@ -1,0 +1,56 @@
+.footer{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    border-top: 1px solid var(--color-border-default);
+    margin-top: 1rem;
+    padding-bottom: 40px;
+    gap: 2rem;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-top: 40px;
+
+}
+
+.footer-left-bar {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links{
+   display: flex;
+   gap: 0.5rem;
+   list-style: none;
+   flex-wrap: wrap;
+   width: 70%;
+   justify-content: space-between;
+   > li  {
+    > a {
+        color: #0969DA
+    }
+   }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-links{
+        width: 100%;
+        justify-content: center;
+    }
+    .footer{
+        justify-content: center;
+    }
+
+    .github-app-header-item-end{
+        display: none;
+    }
+    .Tabs{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: auto;
+    }
+    .Tab>a{
+        padding: 3px;
+    }
+    
+ }
